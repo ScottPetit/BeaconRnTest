@@ -1,7 +1,11 @@
 PODS:
+  - Beacon (2.0.0-beta.2):
+    - HSAttachmentPicker (~> 1.0)
+    - PusherSwift (~> 7.2)
   - boost-for-react-native (1.63.0)
   - CocoaAsyncSocket (7.6.4)
   - CocoaLibEvent (1.0.0)
+  - CryptoSwift (0.15.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.62.2)
   - FBReactNativeSpec (0.62.2):
@@ -67,15 +71,21 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - HSAttachmentPicker (1.0.11)
   - OpenSSL-Universal (1.0.2.19):
     - OpenSSL-Universal/Static (= 1.0.2.19)
   - OpenSSL-Universal/Static (1.0.2.19)
+  - PusherSwift (7.2.0):
+    - CryptoSwift (~> 0.9)
+    - ReachabilitySwift (= 4.3.0)
+    - Starscream (~> 3.0.5)
   - RCTRequired (0.62.2)
   - RCTTypeSafety (0.62.2):
     - FBLazyVector (= 0.62.2)
     - Folly (= 2018.10.22.00)
     - RCTRequired (= 0.62.2)
     - React-Core (= 0.62.2)
+  - ReachabilitySwift (4.3.0)
   - React (0.62.2):
     - React-Core (= 0.62.2)
     - React-Core/DevSupport (= 0.62.2)
@@ -292,11 +302,13 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
     - ReactCommon/callinvoker (= 0.62.2)
+  - Starscream (3.0.6)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
 
 DEPENDENCIES:
+  - Beacon (~> 2.0.0-beta.2)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - FBReactNativeSpec (from `../node_modules/react-native/Libraries/FBReactNativeSpec`)
@@ -347,9 +359,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Beacon
     - boost-for-react-native
     - CocoaAsyncSocket
     - CocoaLibEvent
+    - CryptoSwift
     - Flipper
     - Flipper-DoubleConversion
     - Flipper-Folly
@@ -357,7 +371,11 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - Flipper-RSocket
     - FlipperKit
+    - HSAttachmentPicker
     - OpenSSL-Universal
+    - PusherSwift
+    - ReachabilitySwift
+    - Starscream
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -413,9 +431,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Beacon: 7726d90defbf00002a843fc41434aeba0005d624
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
+  CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   FBLazyVector: 4aab18c93cd9546e4bfed752b4084585eca8b245
   FBReactNativeSpec: 5465d51ccfeecb7faa12f9ae0024f2044ce4044e
@@ -428,9 +448,12 @@ SPEC CHECKSUMS:
   FlipperKit: 6dc9b8f4ef60d9e5ded7f0264db299c91f18832e
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
+  HSAttachmentPicker: 8904e3fb4af16959b3eb6d93824c8448ede1c03d
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
+  PusherSwift: a5369a01e8a9106b4897e9186265af1426726062
   RCTRequired: cec6a34b3ac8a9915c37e7e4ad3aa74726ce4035
   RCTTypeSafety: 93006131180074cffa227a1075802c89a49dd4ce
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
   React: 29a8b1a02bd764fb7644ef04019270849b9a7ac3
   React-Core: b12bffb3f567fdf99510acb716ef1abd426e0e05
   React-CoreModules: 4a9b87bbe669d6c3173c0132c3328e3b000783d0
@@ -448,9 +471,10 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: e18d6852b688e0a4fc1e722e5e068f40e3e858e9
+PODFILE CHECKSUM: 9b6309880d5f7361bb3f5d57c68754f68a9d530b
 
 COCOAPODS: 1.9.3

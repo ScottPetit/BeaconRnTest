@@ -77,6 +77,8 @@ target 'BeaconRnTest' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'Beacon', '~> 2.0.0-beta.2'
+
   target 'BeaconRnTestTests' do
     inherit! :complete
     # Pods for testing
