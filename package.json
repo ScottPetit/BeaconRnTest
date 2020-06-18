@@ -1,0 +1,35 @@
+{
+  "name": "BeaconRnTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "pods": "cd ios/ && pod install",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "clean": "yarn clean:pods && yarn clean:js && rm -rf ios/build/ && rm -rf android/.gradle/ && rm -rf android/app/build/ && rm -rf android/build/",
+    "clean:js": "rm -rf $TMPDIR/react-* && watchman watch-del-all && find . -type d -name __generated__ -prune -exec rm -rf {} \\; && rm -rf node_modules/ && yarn",
+    "clean:ios": "yarn clean:pods && yarn clean:js && rm -rf ios/build/",
+    "clean:android": "yarn clean:js && rm -rf android/.gradle/ && rm -rf android/app/build/ && rm -rf android/build/",
+    "clean:pods": "rm -rf ios/Pods/"
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
