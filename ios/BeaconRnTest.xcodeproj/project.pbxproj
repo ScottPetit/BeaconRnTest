@@ -20,6 +20,7 @@
 		5747BC866C7AAECF4EE85D6E /* libPods-BeaconRnTest-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42665816F0CAF38C02303D28 /* libPods-BeaconRnTest-tvOSTests.a */; };
 		584D56F54170DA97C97C0105 /* libPods-BeaconRnTest-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC161281A2C28A7E1026D25 /* libPods-BeaconRnTest-tvOS.a */; };
 		BC02DD8B2FB6737976B5621C /* libPods-BeaconRnTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596C0F93105A88FCFF36115 /* libPods-BeaconRnTest.a */; };
+		CAF8C56E249C32A100B88933 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF8C56D249C32A100B88933 /* Dummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		830E8D53F3E0B8B371C49A6E /* Pods-BeaconRnTest-BeaconRnTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconRnTest-BeaconRnTestTests.debug.xcconfig"; path = "Target Support Files/Pods-BeaconRnTest-BeaconRnTestTests/Pods-BeaconRnTest-BeaconRnTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B06A0FB25B71D2FA2483D02D /* Pods-BeaconRnTest-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconRnTest-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BeaconRnTest-tvOSTests/Pods-BeaconRnTest-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C00E0A99527965377915C57A /* Pods-BeaconRnTest-BeaconRnTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconRnTest-BeaconRnTestTests.release.xcconfig"; path = "Target Support Files/Pods-BeaconRnTest-BeaconRnTestTests/Pods-BeaconRnTest-BeaconRnTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		CAF8C56C249C32A000B88933 /* BeaconRnTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconRnTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		CAF8C56D249C32A100B88933 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dummy.swift; path = BeaconRnTest/Dummy.swift; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EEC161281A2C28A7E1026D25 /* libPods-BeaconRnTest-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeaconRnTest-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +135,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				CAF8C56D249C32A100B88933 /* Dummy.swift */,
+				CAF8C56C249C32A000B88933 /* BeaconRnTest-Bridging-Header.h */,
 			);
 			name = BeaconRnTest;
 			sourceTree = "<group>";
@@ -148,7 +153,6 @@
 				3072EC0F3AC9340F204D71B4 /* Pods-BeaconRnTest-tvOSTests.debug.xcconfig */,
 				B06A0FB25B71D2FA2483D02D /* Pods-BeaconRnTest-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -292,7 +296,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1150;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -531,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				CAF8C56E249C32A100B88933 /* Dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 830E8D53F3E0B8B371C49A6E /* Pods-BeaconRnTest-BeaconRnTestTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C00E0A99527965377915C57A /* Pods-BeaconRnTest-BeaconRnTestTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = BeaconRnTestTests/Info.plist;
@@ -644,6 +651,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = BeaconRnTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "BeaconRnTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -666,6 +674,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = BeaconRnTest;
+				SWIFT_OBJC_BRIDGING_HEADER = "BeaconRnTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
