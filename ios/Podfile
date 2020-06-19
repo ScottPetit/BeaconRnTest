@@ -45,6 +45,8 @@ def flipper_post_install(installer)
 end
 
 target 'BeaconRnTest' do
+  use_frameworks!
+
   # Pods for BeaconRnTest
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
@@ -90,10 +92,10 @@ target 'BeaconRnTest' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable these next few lines.
-  add_flipper_pods!
-  post_install do |installer|
-    flipper_post_install(installer)
-  end
+  # add_flipper_pods!
+  # post_install do |installer|
+  #   flipper_post_install(installer)
+  # end
 end
 
 target 'BeaconRnTest-tvOS' do
